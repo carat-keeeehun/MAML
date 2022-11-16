@@ -1,0 +1,22 @@
+data:
+    image_size: 84
+    image_channel: 3
+
+training:
+    epoch: 60000
+    n_way: 5
+    k_shot: 1
+    k_qry: 15
+    meta_batch_size: 1
+    larger_backbone: False
+
+    prototype: True
+    in_channels: 3
+    out_channels: 64
+    embedding_size: 64
+
+optim:
+    outer_lr: 0.001
+    inner_lr: 0.01
+    inner_update_steps: 5
+    test_update_steps: 10
